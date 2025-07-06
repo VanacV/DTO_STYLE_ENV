@@ -20,6 +20,7 @@ public class UserController {
         return userService.getById(id);
     }
 
+    @GetMapping
     public List<UserResponseDTO> getAll() {
         return userService.getAllUsers();
     }
